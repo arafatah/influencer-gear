@@ -50,14 +50,15 @@ header{
 
 .header-right{
     background-image:url(../images/Circle\ design.svg);
-    /* background-position: -100px ;
-    background-repeat: no-repeat; */
+    background-size: cover;
+    /* background-position: -100px ; */
+    background-repeat: no-repeat;
 }
 
-/* .header-right img {
-    position: relative;
-    left:-100px;
-} */
+.header-right img {
+    width: 100%; 
+    height: auto; 
+}
 
 .header-left{
     width: 550px;
@@ -236,6 +237,80 @@ footer p{
 }
 
 @media screen and (max-width: 576px){
+    .nav,
+    .nav>ul{
+        flex-direction: column;
+    }
+
+    .header-main,
+    .feature-content{
+        flex-direction: column-reverse;
+    }
+
     
-    
+    header{
+        padding: 10px;
+    }
+
+    .header-right{
+        background-size: 92%;
+        margin-left: 30px;
+        
+        
+        
+    }
+    .header-right img{
+        padding-left:40px ;
+        width: 80%;
+
+
+    }
+
+    .header-main{
+        align-items: normal;
+    }
+
+    .header-left{
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .header-left .header-right-title{
+        color: #3A3A3A;
+        text-align: center;
+        font-size: 1.75rem;
+        font-weight: 700;
+
+    }
+
+    .header-left .header-right-description{
+        color: #3A3A3A;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+        
+
+    }
+
+
+    .sponsor{
+        background: none;
+    }
+    .box-container {
+        padding: 9px 19px;
+        /* display: grid; */
+        grid-template-columns: 1fr;
+    }
+
+    .feature{
+        padding: 20px;
+        text-align: center;
+    }
+
+    .img-container img{
+        margin-right: 0;
+        margin-top: 10px;
+}
+
+
 }
