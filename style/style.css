@@ -1,19 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,700;1,700&family=Poppins:wght@400;500;600;700&family=Work+Sans:ital,wght@0,400;0,600;0,700;0,800;1,800&display=swap');
 
+/* Shared styles */
 *{
     margin: 0;
     font-family: 'Poppins', sans-serif;
 
 }
 
+
+
+/* Header styles */
 header{
-    padding: 87px 120px;
+    padding: 80px 120px;
 }
 
+/* Nav styles */
 .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.nav .nav-title{
+    color: #3A3A3A;
+    font-size: 1.5rem;
+    font-weight: 700;
+    
 }
 
 .nav>ul{
@@ -23,5 +35,116 @@ header{
 .nav li{
     list-style: none;
     margin-right: 34px;
+    color: #3A3A3A;
+    font-size: 1rem;
+    font-weight: 600;
+}
 
+/* Header second part */
+.header-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.header-right{
+    background-image:url(../images/Circle\ design.svg);
+    /* background-position: -100px ;
+    background-repeat: no-repeat; */
+}
+
+/* .header-right img {
+    position: relative;
+    left:-100px;
+} */
+
+.header-left{
+    width: 550px;
+}
+
+.header-main .header-right-title{
+    margin-bottom: 16px;
+    width: 582px;
+    color: #3A3A3A;
+    font-size: 3.25rem;
+    font-weight: 700;    
+}
+
+.header-main .header-right-description{
+    margin-bottom: 16px;
+    color: #3A3A3A;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.header-main .header-btn{
+    border-radius: 41px;
+    background: #E02C6D;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px 24px;
+    border: none;
+}
+
+/* Sponsor style */
+.sponsor{
+    margin-top: 180px;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(192, 204, 218, 0.10) 0%, rgba(192, 204, 218, 0.60) 50.38%, rgba(192, 204, 218, 0.10) 100%);
+    
+    /* border:1px #3A3A3A solid;
+    border-left: none;
+    border-right: none;
+    transition: border-color 0.5s; */
+
+}
+.sponsor-content img{
+    margin-right: 60.42px;
+}
+
+.products .title {
+    color: #3A3A3A;
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.box-container{
+    /* width: 329px;
+    height: 470px; */
+    /* background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 17px 14px 8px 25px; */
+}
+
+
+.box-content{
+    background: red;
+    border-radius: 5px;
+
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+
+
+    
+}
+
+.box-content .box-title{
+    color:  #18191F;
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.box-content .box-price{
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.box-content .box-description{
+    color:  #787885;
+    font-size: 14px;
+    font-weight: 700;
 }
