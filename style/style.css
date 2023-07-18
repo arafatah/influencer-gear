@@ -104,6 +104,8 @@ header{
     margin-right: 60.42px;
 }
 
+/* Main styles here */
+
 .products .title {
     color: #3A3A3A;
     font-size: 1.75rem;
@@ -167,6 +169,7 @@ header{
         
 }
 
+/* Feature start */
 .feature{
     padding: 110px 350px;
     
@@ -209,4 +212,30 @@ header{
     font-size: 16px;
     font-weight: 700;
     border: none;
+}
+
+/* footer styles here */
+
+footer{
+    background: #0A0826;
+    text-align: center;
+}
+
+.footer-title{
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 50px;
+
+}
+
+footer p{
+    color: #D9DBE1;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 576px){
+    
+    
 }
